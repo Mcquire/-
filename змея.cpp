@@ -174,5 +174,6 @@ int main()
 If(gameOver ==true){
 cout<<"Вы проиграли"<<endl;
 }
+cout << "Змейка съела паука и закончилась игра";
 	return 0;
 }
