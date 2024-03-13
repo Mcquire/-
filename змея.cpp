@@ -162,14 +162,18 @@ void Logic()
 
 int main()
 {
+	setlocale(LC_ALL,"rus");
 	Setup();
 	while (gameOver==false)
 	{
 		Draw();
 		Input();
 		Logic();
-		Sleep(70); // замедление игры
+		Sleep(10); // замедление игры
 	}
+If(gameOver ==true){
+cout<<"Вы проиграли"<<endl;
+}
 cout << "Змейка съела паука и закончилась игра";
 	return 0;
 }
